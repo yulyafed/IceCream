@@ -1,4 +1,22 @@
-@import './common';
-@import './example';
+@import "./base/common";
+@import "./base/reset";
+@import "./base/section";
 
+@import "./components/logo";
+@import "./components/container";
+@import "./components/title";
+@import "./components/visuali-hidden";
+
+@import "./utils/mixins";
+@import "./utils/vars";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/products";
+@import "./layout/about";
+@import "./layout/advantages";
+@import "./layout/gallery";
+@import "./layout/customerreviews";
+@import "./layout/contacts";
+@import "./layout/footer";
 
