@@ -1,12 +1,10 @@
 @import "./base/common";
 @import "./base/reset";
-@import "./base/section";
 
-@import "./components/logo";
 @import "./components/container";
 @import "./components/title";
-@import "./components/visuali-hidden";
 
+@import "./utils/visually-hidden";
 @import "./utils/mixins";
 @import "./utils/vars";
 
