@@ -1,1 +1,31 @@
-$first-color:#000000;
+:root {
+  --body-color:#ffffff;/* колір фону сайту*/
+  --logo-top-color: #000000; /* лого хедер*/
+  --logo-bottom-color:#FFFFFF;/* лого футер*/
+  --accent-color: #2196F3; /*  лого веб*/
+  --header-color:  #212121;;/* колір посилань*/
+  --hover-color:#2196F3;/* колір посилань при ховері*/
+  --current-color:#2196F3; /* знаходження на поточному посиланні*/
+  --hero-color:#2F303A;/* колір фону героя*/
+  --top-title-color:  #FFFFFF;/* колір заголовку 1 студія*/
+  --bottom-title-color: #212121;/* колір заголовку 2 студія*/
+  --second-title-color:#212121;/* колір заголовку 3 студія*/
+  --third-title-color:#212121;/* колір заголовку 1 портфоліо*/
+  --top-btn-color: #FFFFFF;/* колір тексту кнопки студія*/
+  --hover-btn-color:#188CE8;/* колір тексту кнопки студія при ховері*/
+  --second-btn-color: #212121;/* колір тексту кнопки портфоліо*/
+  --bacground-btn-color:#F5F4FA;/* колір фону кнопки портфоліо*/
+  --top-text-color:#757575;/* колір тексту 1 студія*/
+  --bottom-text-color: #757575;/* колір тексту 2 студія*/
+  --second-text-color:#757575;/* колір тексту портфоліо*/
+  --team-color:#FFFFFF;/* колір фону команда*/
+  --team-fon-color:#F5F4FA;/* колір фону секціі команда*/
+  --footer-color:#2F303A;/* колір фону футер*/
+  --address-color:#FFFFFF;/* колір адреси*/
+  --contacts-color: rgba(255, 255, 255, 0.6);/* колір пошти тел*/
+  --portfolio-fon-color:#FFFFFF;/* колір фону карток портфоліо*/
+  --first-margin:30px;
+  --second-margin:30px;
+  --duration:250ms;
+  --time-function:cubic-bezier(0.4, 0, 0.2, 1);
+ }
