@@ -5,15 +5,15 @@
   margin: 0 auto;
   outline: 1px solid rgb(224, 34, 145);
   
- @include mobile{
+ @include mobile {
     max-width: 320px ;
 }
-  @include tablet{
+  @include tablet {
     max-width: 768px ;
     padding-left: 32px;
     padding-right: 32px;
 }
-  @include desktop{
+  @include desktop {
     max-width: 1200px ;
     padding-left: 16px;
     padding-right: 16px;
