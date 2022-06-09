@@ -1,0 +1,128 @@
+.contacts {
+    background-color: #FFF5F6;
+    padding-bottom: 48px;
+}
+
+.contacts-block-list {
+    margin-bottom: 32px;
+}
+
+.contacts-block-item {
+    padding: 40px 32px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+
+.contacts-block-text {
+    width: 80px;
+    height: 16px;
+    margin-bottom: 20px;
+    background-color: #F0D1A5;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+.contacts-block-text--foodtruck{
+    background-color: #C2E297;
+    width: 130px;
+}
+
+.contacts-block-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.contacts-item {
+    &:not(:last-child) {
+    border-bottom: 1px solid #E1E1E1;
+    }
+    padding-bottom: 24px;
+    &:not(:first-child) {    
+    padding-top: 24px;
+    }
+}
+
+.contacts-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+}
+
+.contacts-worktime-item {
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+.contacts-day-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #000000;
+}
+
+.contacts-time-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #FFA5BA;
+}
+
+.contacts-connect-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+    display: block;
+}
+.btn{
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
+    height: 44px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contacts-btn-locations {
+    width: 161.45px;
+    background-color: #D41342;
+    color: #FFFFFF;
+    &:hover,
+    &:focus {
+        background-color: #C7133E;
+    }
+    margin-bottom: 10px;
+}
+
+.contacts-btn-franchise {
+    width: 161px;
+    background-color: #FFFFFF;
+    color: #D41443;
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
+}
