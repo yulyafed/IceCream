@@ -1,0 +1,124 @@
+.products {
+  &__item {
+    background: #f0d1a5;
+    border-radius: 24px;
+    position: relative;
+    &:first-child {
+      background: #ffb8ca;
+    }
+    &:last-child {
+      background: #c2e297;
+    }
+    &:not(:last-child) {
+      margin-bottom: 140px;
+    }
+    @media screen and (min-width: 768px) {
+      width: calc(100% / 3 - 16px);
+      margin-left: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: calc(100% / 3 - 32px);
+      margin-left: 32px;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    top: -145px;
+    position: absolute;
+  }
+  &__btn {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -16px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-left: -32px;
+    }
+  }
+  &__sections {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  &__text {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #ffffff;
+    margin-bottom: 32px;
+  }
+
+  &__row {
+    padding: 160px 40px 40px 40px;
+
+    text-align: center;
+  }
+  &__sub-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 20px;
+
+    &::after {
+      content: '...';
+      display: block;
+      color: #ffffff;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  }
+  &__top-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 18px;
+      font-size: 26px;
+      line-height: calc(30 / 26);
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: calc(34 / 30);
+      }
+    }
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: calc(39 / 34);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    margin-bottom: 148px;
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+      line-height: calc(34 / 38);
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: calc(66 / 58);
+    }
+  }
+}
