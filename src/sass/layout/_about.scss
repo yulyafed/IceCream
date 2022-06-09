@@ -1,19 +1,83 @@
 .about {
   background-color: var(--bottom-body-bg-color);
+  color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background-image: url(../image-about/milk-bg-mobile-1x.png);
+  background-repeat: no-repeat;
+  background-position: right 50% bottom 25%;
 }
-// .container {
-// }
-// .about__label {
-// }
-// .about__title {
-// }
+
+.about__label {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--third-text-color);
+
+  margin-bottom: 15px;
+}
+
+.about__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}
 // .about__description {
 // }
-// .about__image {
-// }
-// .team__image {
-// }
-// .about__text {
-// }
-// .about__button {
-// }
+.about__image {
+  min-width: 100%;
+  margin-bottom: 40px;
+}
+.about__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  width: 220px;
+
+  &--first {
+    color: var(--fourth-text-color);
+  }
+  &--second {
+    color: var(--fifth-text-color);
+  }
+}
+
+.about__text--first {
+  margin-bottom: 25px;
+}
+
+.about__text--second {
+  margin-bottom: 20px;
+}
+.about__button {
+  background: #ffffff;
+  color: var(--second-text-color);
+  border-radius: 22px;
+  padding: 15px 56px 15px 42px;
+  border: none;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  align-items: center;
+  text-align: center;
+}
