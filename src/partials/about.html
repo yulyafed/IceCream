@@ -4,9 +4,34 @@
     <h2 class="about__title">how it’s made?</h2>
 
     <div class="about__description">
-      <!-- <picture class="about__image">
-        <img src="" alt="Мороженко" />
-      </picture> -->
+      <picture class="about__image">
+        <source
+          srcset="
+            ./image-about/cow-desctop-1x.png 1x,
+            ./image-about/cow-desctop-1x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./image-about/cow-tablet-1x.png 1x,
+            ./image-about/cow-tablet-1x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./image-about/cow-mobile-1x.png 1x,
+            ./image-about/cow-mobile-1x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          class="team__image"
+          src="./image-about/cow-desctop-1x.png"
+          alt="Фото продуктивного дизайнера"
+        />
+      </picture>
 
       <p class="about__text">
         Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
