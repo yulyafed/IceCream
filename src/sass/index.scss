@@ -1,20 +1,19 @@
-@import "./base/common";
-@import "./base/reset";
+@import './base/common';
+@import './base/reset';
 
-@import "./components/container";
-@import "./components/title";
+@import './components/container';
+@import './components/title';
+@import './components/mob-menu';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+@import './utils/vars';
 
-@import "./utils/visually-hidden";
-@import "./utils/mixins";
-@import "./utils/vars";
-
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/products";
-@import "./layout/about";
-@import "./layout/advantages";
-@import "./layout/gallery";
-@import "./layout/customerreviews";
-@import "./layout/contacts";
-@import "./layout/footer";
-
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customerreviews';
+@import './layout/contacts';
+@import './layout/footer';
