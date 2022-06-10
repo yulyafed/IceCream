@@ -1,0 +1,45 @@
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: hsla(345, 100%, 86%, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: opacity 250ms, visibility 250ms;
+}
+
+.backdrop.is-hidden .about__modal {
+  transform: scale(0.01);
+}
+
+.about__modal {
+  position: relative;
+
+  width: 320px;
+  min-height: 500px;
+  background-color: var(--first-bg-color);
+  border-radius: 24px;
+
+  transform: scale(1);
+  transition: transfom 250ms;
+}
+
+.about-modal-btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid var(--second-bg-color);
+  background-color: transparent;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-close-icon {
+  fill: var(--first-text-color);
+}
