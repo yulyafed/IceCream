@@ -55,6 +55,9 @@
     &:not(:first-child) {    
     padding-top: 24px;
     }
+    &:last-child {
+        padding-bottom: 0;
+    }
 }
 
 .contacts-text {
