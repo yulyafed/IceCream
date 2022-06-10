@@ -1,0 +1,188 @@
+.contacts {
+    background-color: #FFF5F6;
+    padding: 24px 0;
+}
+
+.contacts-block-list {
+    margin-bottom: 32px;
+    @include tablet {
+        display: flex;
+        margin-bottom: 40px;
+    }
+    @include desktop {
+        margin-bottom: 60px;
+    }
+}
+
+.contacts-block-item {    
+    padding: 40px 32px;
+    background-color: var(--first-text-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    width: 100%;
+    @include mobile {
+        @media screen and (max-width: 767.98px) {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @include  tablet {
+        width: calc(33% - 32px);
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+}
+
+.contacts-block-text {
+    width: 80px;
+    height: 16px;
+    margin-bottom: 20px;
+    background-color: var(--second-bg-color);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    @include tablet {
+        width: 73px;
+        height: 28px;
+        font-size: 16px;
+    }
+}
+
+.contacts-block-text--foodtruck {
+    background-color: var(--third-bg-color);
+    width: 130px;
+    @include tablet {
+        width: 138px;
+    }
+}
+.contacts-text-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: var(--fourth-text-color);
+    @include tablet {
+        font-size: 14px;
+    }
+    @include desktop {
+        font-size: 16px;
+    }
+}
+.contacts-block-title {
+    margin-bottom: 8px;
+}
+
+.contacts-item {
+    &:not(:last-child) {
+    border-bottom: 1px solid #E1E1E1;
+    }
+    &:nth-child(-n + 2) {
+        padding-bottom: 24px;
+    }
+    &:nth-last-child(-n + 2) {
+        padding-top: 24px;
+    }
+}
+
+.contacts-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--fifth-text-color);
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.66;
+    }
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.83;
+    }
+}
+
+.contacts-worktime-item {
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+.contacts-time-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: var(--third-text-color);
+    @include tablet {
+        font-size: 14px;
+    }
+    @include desktop {
+        font-size: 16px;
+    }
+}
+
+.contacts-connect-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--fifth-text-color);
+    display: block;
+    @include tablet {
+        font-size: 14px;
+    }
+    @include desktop {
+        font-size: 16px;
+    }
+}
+.contacts-btn-wrap {
+    @include tablet {
+        display: flex;
+        justify-content: center;
+    }
+}
+.btn{
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 161px;
+    height: 44px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include tablet {
+        margin: 0;
+    }
+}
+.contacts-btn-locations {
+    background-color: #D41342;
+    color: var(--first-text-color);
+    margin-bottom: 10px;
+    &:hover,
+    &:focus {
+        background-color: #C7133E;
+    }
+    @include tablet {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+}
+
+.contacts-btn-franchise {
+    background-color: var(--first-text-color);
+    color: var(--second-text-color);
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
+}
