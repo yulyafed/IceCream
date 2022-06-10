@@ -13,7 +13,7 @@
 }
 
 .backdrop.is-hidden .about__modal {
-  transform: scale(0.01);
+  transform: scale(0.01) rotate(-720deg);
 }
 
 .about__modal {
@@ -24,7 +24,7 @@
   background-color: var(--first-bg-color);
   border-radius: 24px;
 
-  transform: scale(1);
+  transform: scale(1) rotate(1);
   transition: transform 250ms;
 }
 
