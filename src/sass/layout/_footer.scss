@@ -4,6 +4,10 @@
     padding-bottom: 20px;
 }
 
+.footer-container{
+    padding-bottom: 40px;
+}
+
 .footer-title{
     margin-right: 66px;
     margin-left: 20px;
@@ -73,7 +77,6 @@ font-family: 'Titan One';
 .footer-position {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 56px;
 }
 
 .footer-position__text {
@@ -104,13 +107,11 @@ font-family: 'Titan One';
         line-height: 1.52;
         text-align: center;
         color: var(--fifth-text-color);
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-top: 16px;
-        margin-bottom: 20px;
+        
         border-top: 1px solid #E1E1E1;
         display: block;
-            
-            max-width: 320px;
-           
+        padding: 20px 70px;
+        max-width: 320px;
+        margin: auto;
+
 }
