@@ -34,10 +34,16 @@
   border-radius: 50%;
   border: 2px solid var(--second-bg-color);
   background-color: transparent;
+  cursor: pointer;
 
   position: absolute;
   top: 10px;
   right: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: --third-bg-color;
+  }
 }
 
 .modal-close-icon {
