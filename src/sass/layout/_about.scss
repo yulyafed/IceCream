@@ -5,11 +5,15 @@
 
   background-image: url(../image-about/milk-bg-mobile-1x.png);
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: right 50% bottom 25%;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../image-about/milk-bg-mobile-2x.png);
+    background-size: contain;
+
+    background-position: right 50% bottom 25%;
   }
 
   @include tablet {
@@ -112,16 +116,16 @@
   font-size: 12px;
   line-height: 1.62;
 
-  width: 220px;
+  max-width: 220px;
 
   @include tablet {
-    width: 100%;
+    max-width: 100%;
     font-size: 14px;
     line-height: 1.76;
   }
 
   @include desktop {
-    width: 100%;
+    max-width: 100%;
 
     font-size: 16px;
     line-height: 1.76;
