@@ -12,6 +12,10 @@
     margin-right: 66px;
     margin-left: 20px;
     margin-bottom: 40px;
+    @include tablet{
+        display: inline-block;
+        margin-left: 18px;
+    }
 }
 
 .footer__text {
@@ -26,6 +30,12 @@ font-family: 'Titan One';
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    @include tablet {
+        font-size: 26px;
+        line-height: 1.15;
+            letter-spacing: 0.04em;
+            width: 340px;
+        }
     
 }
 
@@ -39,6 +49,12 @@ font-family: 'Titan One';
         text-transform: uppercase;
         color: var(--second-text-color);
         margin-bottom: 40px;
+        @include tablet{
+            font-size: 48px;
+                line-height: 1.14;
+                letter-spacing: 0.06em;
+                width: 340px;
+        }
 }
 
 .footer-social__soc-list {
@@ -107,14 +123,9 @@ font-family: 'Titan One';
         line-height: 1.52;
         text-align: center;
         color: var(--fifth-text-color);
-        
         border-top: 1px solid #E1E1E1;
-        display: block;
         padding: 20px 70px;
-        max-width: 320px;
-        margin: auto;
         @include tablet{
             padding: 20px 0;
         }
-
 }
