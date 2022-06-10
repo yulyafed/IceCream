@@ -1,12 +1,93 @@
 
 .advantages {
   padding-bottom: 80px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 84px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+}
 }
 .advantages-list {
-  margin-bottom: -32px;
+    @media screen and (max-width: 767px) {
+    margin-bottom: -32px;
+}
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 527px;
+    
+    margin-left: -22px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1100px;
+    margin-left: -106px;
+}
 }
 .advantages-item {
+  @media screen and (max-width: 767px) {
+  width: 230px;
+  height: 157px;
+  
   margin-bottom: 32px;
+}
+  @media screen and (min-width: 768px){
+  width: calc(100% / 3 - 22px);
+  margin-left: 22px;
+}
+  @media screen and (min-width: 1280px){
+  width: calc(100% / 3 - 106px);
+  margin-left: 106px;
+}
+}
+.first-item::before{
+  content: '';
+  width: 33px;
+  height: 50px;
+  display: inline-block;
+  background-size: contain;
+  background-image: url('../image-advantages/milk1x.png');
+  
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px){
+  margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280px){
+  margin-bottom: 40px;
+}
+}
+.second-item::before{
+  content: '';
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-size: contain;
+  background-image: url('../image-advantages/fruits1x.png');
+
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px){
+  margin-bottom: 36px;
+}
+@media screen and (min-width: 1280px){
+  margin-bottom: 40px;
+}
+}
+.third-item::before{
+  content: '';
+  width: 44px;
+  height: 50px;
+  display: inline-block;
+  background-size: contain;
+  background-image: url('../image-advantages/ice1x.png');
+
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px){
+  margin-bottom: 36px;
+}
+@media screen and (min-width: 1280px){
+  margin-bottom: 40px;
+}
 }
 .advantages-top-text {
 font-family: 'Titan One';
@@ -15,9 +96,22 @@ line-height: 1.14;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 
-margin-bottom: 35px;
+margin-bottom: 16px;
 
 color: #D41443;
+
+ @media screen and (min-width: 768px){
+  font-size: 48px;
+  line-height: 1.15;
+
+  margin-bottom: 13px;
+}
+@media screen and (min-width: 1280px){
+  font-size: 58px;
+  line-height: 1.14;
+
+  margin-bottom: 16px;
+}
 }
 .advantages-bottom-text {
 font-weight: 700;
@@ -25,4 +119,16 @@ font-size: 12px;
 line-height: 1.17;
 
 color: #000000;
+
+@media screen and (min-width: 768px){
+width: 170px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.71;
+}
+@media screen and (min-width: 1280px){
+  width: 288px;
+  font-size: 16px;
+  line-height: 1.75;
+}
 }
