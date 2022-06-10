@@ -7,6 +7,16 @@
   background-image: url(../image-about/milk-bg-mobile-1x.png);
   background-repeat: no-repeat;
   background-position: right 50% bottom 25%;
+
+  @include tablet {
+    background-image: none;
+  }
+
+  @include desktop {
+    background-image: url(../image-about/milk-bg-desctop-1x.png);
+    background-repeat: no-repeat;
+    background-position: right 50% bottom 25%;
+  }
 }
 
 .about__label {
@@ -22,6 +32,16 @@
   color: var(--third-text-color);
 
   margin-bottom: 15px;
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .about__title {
@@ -34,12 +54,46 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--second-text-color);
+
+  @include tablet {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
 }
-// .about__description {
-// }
+.about__description {
+  @include tablet {
+    display: flex;
+  }
+}
 .about__image {
-  min-width: 100%;
+  width: 100%;
   margin-bottom: 40px;
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 500px;
+    margin-bottom: 0;
+  }
+}
+.about__description-text {
+  @include tablet {
+    margin-left: 32px;
+    width: 100%;
+  }
+
+  @include desktop {
+    width: 500px;
+    margin-bottom: 0;
+  }
 }
 .about__text {
   font-family: 'DM Sans';
@@ -56,6 +110,19 @@
   &--second {
     color: var(--fifth-text-color);
   }
+
+  @include tablet {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  @include desktop {
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
 
 .about__text--first {
@@ -64,6 +131,17 @@
 
 .about__text--second {
   margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.94;
+
+    letter-spacing: 0.04em;
+  }
 }
 .about__button {
   background: #ffffff;
