@@ -1,0 +1,140 @@
+.reviews {
+  padding-bottom: 48px;
+  @include tablet {
+    padding-bottom: 80px;
+  }
+  @include desktop {
+    padding-bottom: 120px;
+  }
+}
+.slider__foto {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 75px;
+  border-radius: 50%;
+  box-shadow: 3px 0 3px purple, 0 3px 3px purple, -3px 0 3px purple,
+    0 -3px 3px purple;
+  @include tablet {
+    margin-bottom: 57px;
+  }
+  @include desktop {
+    margin-bottom: 63px;
+  }
+}
+.slider__description {
+  margin-bottom: 33px;
+  position: relative;
+  padding-bottom: 4px;
+  background-position: 0px -4px;
+  background-image: -webkit-repeating-linear-gradient(
+    top,
+    transparent 0px,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
+  @include tablet {
+    display: flex;
+    width: 608px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    width: 821px;
+    margin-bottom: 47px;
+  }
+}
+
+.slider__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.slider__top-text {
+  display: flex;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: #000000;
+  max-width: 157px;
+  position: relative;
+  z-index: 1;
+
+  @include tablet {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.04em;
+    max-width: 515px;
+  }
+  @include desktop {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.88;
+
+    max-width: 750px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    display: block;
+    background-image: url(./components/slick-utils/chirik.svg);
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 40px;
+    background-size: contain;
+    z-index: -1;
+    transform: translateY(-50%);
+    @include tablet {
+      left: -40px;
+    }
+    @include desktop {
+      left: -35px;
+    }
+  }
+}
+
+.slider__bottom-text {
+  position: relative;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: #000000;
+  padding-top: 20px;
+  margin-bottom: 16px;
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.88;
+    margin-bottom: 32px;
+  }
+  @include desktop {
+    font-size: 20px;
+    line-height: 1.85;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    background-size: contain;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background-image: url(./components/slick-utils/Group.svg);
+    background-repeat: no-repeat;
+  }
+}
