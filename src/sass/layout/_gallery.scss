@@ -1,3 +1,9 @@
+.gallery-container {
+    background-image: linear-gradient(
+        to bottom,
+        #FFF5F6 40%,
+        #ffffff 60%);
+}
 .vissually-hidden {
     position: absolute;
     width: 1px;
@@ -45,10 +51,7 @@
 
     max-width: 320px;
 
-    background-image: linear-gradient(
-    to bottom,
-    #FFF5F6 50%,
-    #ffffff 50%);
+    
     
     counter-reset: grid-item;
 
