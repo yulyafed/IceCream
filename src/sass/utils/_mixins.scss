@@ -1,19 +1,19 @@
 @mixin mobile {
-    @media screen and (min-width: 320px) {
-        @content;
-    }
+  @media screen and (min-width: 320px) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media screen and (min-width: 768px) {
-        @content;
-    }
+  @media screen and (min-width: 768px) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media screen and (min-width: 1280px) {
-        @content;
-    }
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
 }
 @mixin list($fx, $fw, $mr, $mb, $ml, $mt, $m) {
   display: $fx;
@@ -34,7 +34,7 @@
   flex-basis: calc(100% / #{$q} - #{$gap});
 }
 
-@mixin font($fz, $ff, $fw, $lh, $ls, $c, $ti:left) {
+@mixin font($fz, $ff, $fw, $lh, $ls, $c, $ti: left) {
   font-size: $fz;
   font-family: $ff;
   font-weight: $fw;
@@ -53,4 +53,3 @@
   transition-duration: $time;
   transition-property: $one, $two, $three;
 }
-
