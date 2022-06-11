@@ -6,7 +6,11 @@
 
 .footer-container{
     padding-bottom: 40px;
-}
+    @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+}}
 
 .footer-title{
     margin-right: 66px;
@@ -15,6 +19,7 @@
     @include tablet{
         display: inline-block;
         margin-left: 18px;
+        text-align: left;
     }
 }
 
@@ -35,6 +40,11 @@ font-family: 'Titan One';
         line-height: 1.15;
             letter-spacing: 0.04em;
             width: 340px;
+            margin-left: 0;
+        }
+        @include desktop{
+            font-size: 30px;
+            line-height: 1.13;
         }
     
 }
@@ -53,7 +63,12 @@ font-family: 'Titan One';
             font-size: 48px;
                 line-height: 1.14;
                 letter-spacing: 0.06em;
-                width: 340px;
+                width: 260px;
+                margin: 0;
+                padding: 0;
+        }
+        @include desktop{
+            font-size: 58px;
         }
 }
 
@@ -62,6 +77,8 @@ font-family: 'Titan One';
     flex-direction: row;
     justify-content: flex-end;
     margin-bottom: 40px;
+    @include tablet{
+    }
 }
 
 .footer-social__item:not(:last-child){
@@ -93,6 +110,12 @@ font-family: 'Titan One';
 .footer-position {
     display: flex;
     justify-content: flex-end;
+    @include tablet{
+        width: 268px;
+    }
+    @include desktop{
+        width: 319px;
+    }
 }
 
 .footer-position__text {
@@ -101,6 +124,13 @@ font-family: 'Titan One';
         line-height: 1.86;
         text-align: right;
         color: var(--fourth-text-color);
+        @include tablet {
+                font-size: 14px;
+                line-height: 1.86;
+            }
+        @include desktop {
+            font-size: 16px;
+                }
 }
 
 .footer-position__link {
@@ -115,6 +145,13 @@ font-family: 'Titan One';
             &:focus {
                 color: var(--modal-bg-color);
             }
+            @include tablet{
+                font-size: 14px;
+                line-height: 1.86;
+            }
+            @include desktop{
+                font-size: 16px;
+            }
 }
 
 .footer-symbol__text{
@@ -127,5 +164,6 @@ font-family: 'Titan One';
         padding: 20px 70px;
         @include tablet{
             padding: 20px 0;
+            line-height: 1.86;
         }
 }
