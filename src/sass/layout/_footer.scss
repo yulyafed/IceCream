@@ -6,12 +6,21 @@
 
 .footer-container{
     padding-bottom: 40px;
-}
+    @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+}}
 
 .footer-title{
     margin-right: 66px;
     margin-left: 20px;
     margin-bottom: 40px;
+    @include tablet{
+        display: inline-block;
+        margin-left: 18px;
+        text-align: left;
+    }
 }
 
 .footer__text {
@@ -26,6 +35,17 @@ font-family: 'Titan One';
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    @include tablet {
+        font-size: 26px;
+        line-height: 1.15;
+            letter-spacing: 0.04em;
+            width: 340px;
+            margin-left: 0;
+        }
+        @include desktop{
+            font-size: 30px;
+            line-height: 1.13;
+        }
     
 }
 
@@ -39,6 +59,17 @@ font-family: 'Titan One';
         text-transform: uppercase;
         color: var(--second-text-color);
         margin-bottom: 40px;
+        @include tablet{
+            font-size: 48px;
+                line-height: 1.14;
+                letter-spacing: 0.06em;
+                width: 260px;
+                margin: 0;
+                padding: 0;
+        }
+        @include desktop{
+            font-size: 58px;
+        }
 }
 
 .footer-social__soc-list {
@@ -46,6 +77,8 @@ font-family: 'Titan One';
     flex-direction: row;
     justify-content: flex-end;
     margin-bottom: 40px;
+    @include tablet{
+    }
 }
 
 .footer-social__item:not(:last-child){
@@ -77,6 +110,12 @@ font-family: 'Titan One';
 .footer-position {
     display: flex;
     justify-content: flex-end;
+    @include tablet{
+        width: 268px;
+    }
+    @include desktop{
+        width: 319px;
+    }
 }
 
 .footer-position__text {
@@ -85,6 +124,13 @@ font-family: 'Titan One';
         line-height: 1.86;
         text-align: right;
         color: var(--fourth-text-color);
+        @include tablet {
+                font-size: 14px;
+                line-height: 1.86;
+            }
+        @include desktop {
+            font-size: 16px;
+                }
 }
 
 .footer-position__link {
@@ -99,6 +145,13 @@ font-family: 'Titan One';
             &:focus {
                 color: var(--modal-bg-color);
             }
+            @include tablet{
+                font-size: 14px;
+                line-height: 1.86;
+            }
+            @include desktop{
+                font-size: 16px;
+            }
 }
 
 .footer-symbol__text{
@@ -107,11 +160,10 @@ font-family: 'Titan One';
         line-height: 1.52;
         text-align: center;
         color: var(--fifth-text-color);
-        
         border-top: 1px solid #E1E1E1;
-        display: block;
         padding: 20px 70px;
-        max-width: 320px;
-        margin: auto;
-
+        @include tablet{
+            padding: 20px 0;
+            line-height: 1.86;
+        }
 }
