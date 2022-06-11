@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
 
-  transition: opacity 250ms, visibility 250ms;
+  transition: opacity 350ms, visibility 350ms;
 }
 
 .backdrop.is-hidden .about__modal {
@@ -27,7 +27,15 @@
   border: 5px dashed var(--first-text-color);
 
   transform: scale(1) rotate(1);
-  transition: transform 250ms;
+  transition: transform 350ms;
+
+  @include tablet {
+    width: 500px;
+  }
+
+  @include desktop {
+    width: 600px;
+  }
 }
 
 .about-modal-btn {
