@@ -47,6 +47,10 @@
     border-radius: 50%;
     cursor: pointer;
     fill: #d7224d;
+    &:hover .products__btn-icon,
+    &:focus .products__btn-icon {
+      transform: rotate(-90deg);
+    }
   }
   &__list {
     @media screen and (min-width: 768px) {
