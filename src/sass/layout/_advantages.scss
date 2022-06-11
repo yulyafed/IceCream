@@ -1,6 +1,7 @@
 
 .advantages {
   padding-bottom: 80px;
+  background-color: var(--bottom-body-bg-color);
 
   @media screen and (min-width: 768px) {
     padding-bottom: 84px;
@@ -98,7 +99,7 @@ text-transform: uppercase;
 
 margin-bottom: 16px;
 
-color: #D41443;
+color: var(--second-text-color);
 
  @media screen and (min-width: 768px){
   font-size: 48px;
@@ -118,7 +119,7 @@ font-weight: 700;
 font-size: 12px;
 line-height: 1.17;
 
-color: #000000;
+color: var(--fourth-text-color);
 
 @media screen and (min-width: 768px){
 width: 170px;
