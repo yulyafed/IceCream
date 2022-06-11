@@ -16,6 +16,9 @@
     @media screen and (min-width: 768px) {
       width: calc(100% / 3 - 16px);
       margin-left: 16px;
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
     @media screen and (min-width: 1280px) {
       width: calc(100% / 3 - 32px);
@@ -28,6 +31,9 @@
     height: auto;
     top: -145px;
     position: absolute;
+    @media screen and (min-width: 1280px) {
+      top: -245px;
+    }
   }
   &__btn {
     display: flex;
@@ -63,15 +69,23 @@
     line-height: calc(24 / 14);
     text-align: center;
     letter-spacing: 0.04em;
-
     color: #ffffff;
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: calc(24 / 16);
+    }
   }
 
   &__row {
     padding: 160px 40px 40px 40px;
-
     text-align: center;
+    @media screen and (min-width: 768px) {
+      padding: 118px 32px 40px 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 165px 75px 60px 75px;
+    }
   }
   &__sub-title {
     font-family: 'Titan One';
@@ -82,6 +96,10 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #ffffff;
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: calc(23 / 30);
+    }
 
     &::after {
       content: '...';
@@ -122,12 +140,13 @@
     color: #d41443;
     margin-bottom: 148px;
     @media screen and (min-width: 768px) {
-      font-size: 30px;
-      line-height: calc(34 / 38);
+      font-size: 48px;
+      line-height: calc(55 / 48);
     }
     @media screen and (min-width: 1280px) {
       font-size: 58px;
       line-height: calc(66 / 58);
+      margin-bottom: 258px;
     }
   }
 }
