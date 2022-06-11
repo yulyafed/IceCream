@@ -26,13 +26,8 @@
   position: relative;
   padding-bottom: 4px;
   background-position: 0px -4px;
-  background-image: -webkit-repeating-linear-gradient(
-    top,
-    transparent 0px,
-    transparent 30px,
-    #e1e1e1 30px,
-    #e1e1e1 31px
-  );
+    background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, #e1e1e1 31px);
+  
   @include tablet {
     display: flex;
     width: 608px;
