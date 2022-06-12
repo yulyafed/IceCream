@@ -11,6 +11,5 @@ refs.closeModFrBtn.addEventListener("click", toggleModFr);
 
 function toggleModFr() {
     refs.modfr.classList.toggle("is-hidden");
-    refs.body.classList.toggle("no-scroll");
 }
 })();
