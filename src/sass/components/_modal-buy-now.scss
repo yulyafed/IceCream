@@ -47,12 +47,9 @@
   background-color: rgb(213, 230, 246);
   text-align: center;
   position: relative;
-  background-image: url(../image-hero-header/icecream-modal.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom -90px center;
   transform: rotate(0) translateX(o);
   transition: transform 1000ms linear;
+  border: 4px dashed #fff;
 }
 .backdrop.is-hidden-header .modal-buy-now {
   transform: rotate(360deg) translateX(100%);
@@ -92,7 +89,15 @@
   right: 10px;
   background-color: transparent;
   border: none;
+  border-radius: 50%;
   outline: none;
+  transition: background-color 300ms linear, border 300ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+    border: 2px solid #fff;
+  }
 }
 .menu-mob-buy-now__close-icon {
   fill: #d41443;
