@@ -60,7 +60,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   color: #d41443;
@@ -69,16 +69,21 @@
   padding-bottom: 15px;
   margin-left: 32px;
   transition: background-color 300ms linear;
+
   cursor: pointer;
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    animation-name: scaleanim;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
   & span {
     margin-left: 20px;
   }
-  @media screen and (max-width: 768px) {
-    display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
   @media screen and (min-width: 1280px) {
     margin-left: auto;
