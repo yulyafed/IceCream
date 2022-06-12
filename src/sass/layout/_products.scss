@@ -1,3 +1,16 @@
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
 .products {
   &__item {
     background: var(--second-bg-color);
@@ -143,6 +156,7 @@
     text-transform: uppercase;
     color: var(--second-text-color);
     margin-bottom: 148px;
+    animation: pulse 2s infinite;
     @media screen and (min-width: 768px) {
       font-size: 48px;
       line-height: calc(55 / 48);
