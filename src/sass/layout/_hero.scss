@@ -12,6 +12,7 @@
   bottom: 0;
   right: 32px;
   z-index: -1;
+
   @media screen and (min-width: 768px) {
     width: 143px;
     right: 280px;
@@ -221,6 +222,7 @@
   color: #ffffff;
   display: none;
   flex-direction: column;
+
   &.top {
     margin-bottom: 16px;
   }
@@ -230,6 +232,19 @@
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: calc(18px / 14px);
+  }
+}
+@keyframes scaleanim {
+  0% {
+    transform: scale(1);
+    box-shadow: purple;
+  }
+  50% {
+    transform: scale(1.25);
+    box-shadow: inset 0 0 10px 5px rgb(214, 10, 10);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 .hero-right__text-top {
