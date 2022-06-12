@@ -134,3 +134,39 @@
     background-repeat: no-repeat;
   }
 }
+
+.back-button {
+    display: inline-block;
+    background-color: #ffa5ba;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: background-color .3s,opacity .5s,visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    &.show {
+      opacity: 1;
+      visibility: visible;
+          &:hover,
+    &:focus {
+      background-color: #ffa5ba;
+      box-shadow: 0 0 10px 0 #ff003c inset, 0 0 20px 4px #ff003c;
+      transition: all 150ms ease-in-out;
+    }
+      }
+    &:after {
+    content: "\2B9D";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #d41443;}
+}
