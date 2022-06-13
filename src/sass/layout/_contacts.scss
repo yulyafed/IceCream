@@ -136,7 +136,7 @@
     line-height: 1.5;
     color: var(--fifth-text-color);
     display: block;
-    transition: color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: color 250ms linear;
     &:hover,
     &:focus {
         color: var(--second-text-color);
@@ -169,7 +169,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: background-color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: background-color 250ms linear;
     @include tablet {
         margin: 0;
     }
