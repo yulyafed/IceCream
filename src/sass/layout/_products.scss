@@ -168,3 +168,53 @@
     }
   }
 }
+.additinfo_row {
+  overflow: hidden;
+  z-index: 15;
+}
+.additinfo-open-btn {
+  cursor: pointer;
+}
+
+.additinfo-open-btn::after {
+  content: '';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-image: url(../image-hero-header/arrow.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  transition: transform 700ms linear, border 300ms linear;
+}
+.additinfo-open-btn:hover.additinfo-open-btn::after,
+.additinfo-open-btn:focus.additinfo-open-btn::after {
+  border: 2px solid #d4144495;
+}
+.additinfo-open-btn__check:checked + .additinfo-open-btn::after {
+  transform: rotate(-90deg);
+}
+.additinfo-open-btn__check:checked + .additinfo-open-btn .additinfo-text {
+  transform: translateY(0);
+  opacity: 1;
+}
+.additinfo-text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  color: #ffffff;
+  display: block;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 700ms linear, opacity 700ms linear;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
