@@ -102,6 +102,7 @@
   @include tablet {
     margin-left: 32px;
     width: 100%;
+    padding-right: 0;
   }
 
   @include desktop {
