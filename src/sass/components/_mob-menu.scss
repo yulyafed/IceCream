@@ -36,7 +36,19 @@
   border: none;
   outline: none;
   top: 20px;
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
   right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+  }
 }
 li {
   list-style: none;
@@ -75,6 +87,7 @@ li {
     background-color: #ecebeb;
   }
 }
+
 .mob-menu-btn span {
   margin-left: 40px;
 }
@@ -87,4 +100,9 @@ li {
   line-height: 18px;
   text-align: left;
   color: #ffffff;
+  transition: color 300ms linear;
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
 }
