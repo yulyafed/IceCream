@@ -52,7 +52,6 @@
     align-items: center;
     background-color: transparent;
     cursor: pointer;
-    transition: fill 250ms linear;
     &:hover .modal-franchise-close-icon,
     &:focus .modal-franchise-close-icon {
         fill: #C7133E;
@@ -61,6 +60,7 @@
 
 .modal-franchise-close-icon {
     fill: var(--first-text-color);
+    transition: fill 250ms linear;
 }
 
 .modal-franchise-title {
@@ -100,16 +100,16 @@
     width: 100%;
     height: 40px;
     color: var(--fifth-text-color);
-    border: none;
+    border: 1px solid transparent;
     box-sizing: border-box;
     border-radius: 20px;
     padding: 0 0 0 42px;
     cursor: pointer;
     outline: none;
-    transition: border 250ms linear;
+    transition: border-color 250ms linear;
     &:hover,
     &:focus {
-        border: 1px solid var(--second-text-color);
+        border-color: var(--second-text-color);
     }
 }
 
@@ -120,20 +120,35 @@
     fill: var(--fifth-text-color);
     transform: translateY(-50%);
     transition: fill 250ms linear;
-    .modal-franchise-form-input:hover+&,
-    .modal-franchise-form-inputt:focus+& {
+    .modal-franchise-form-input:hover + &,
+    .modal-franchise-form-inputt:focus + & {
         fill: var(--second-text-color);
     }
 }
+
 .modal-franchise-form-btn{
-    background-color: var(--first-text-color);
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 161px;
+    height: 44px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: var(--second-text-color);
-    transition: background-color 250ms linear;
-    transition: border 250ms linear;
+    background-color: var(--first-text-color);
+    transition: background-color 250ms linear, border-color 250ms linear;
     &:hover,
     &:focus {
         background-color: #ECEBEB;
-        border: 1px solid var(--second-text-color);
+        border-color: var(--second-text-color);
     }
     @include tablet {
         margin: 0 auto;
