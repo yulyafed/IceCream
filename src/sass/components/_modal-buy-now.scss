@@ -77,6 +77,14 @@
   line-height: 1, 15;
   letter-spacing: 0.04em;
   border: 2px solid #d41443;
+  cursor: pointer;
+  transform: scale(1);
+  transition: background-color 300ms linear, transform 300ms linear;
+  &:hover,
+  &:focus {
+    background-color: rgb(251, 162, 177);
+    transform: scale(1.25);
+  }
 }
 .modal-buy-now-close__btn {
   display: flex;
