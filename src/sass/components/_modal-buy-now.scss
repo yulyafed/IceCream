@@ -44,7 +44,7 @@
   width: 400px;
   padding: 40px 20px 20px 20px;
   border-radius: 20px;
-  background-color: rgb(213, 230, 246);
+  background-color: rgb(171, 207, 241);
   text-align: center;
   position: relative;
   transform: rotate(0) translateX(o);
@@ -77,6 +77,14 @@
   line-height: 1, 15;
   letter-spacing: 0.04em;
   border: 2px solid #d41443;
+  cursor: pointer;
+  transform: scale(1);
+  transition: background-color 300ms linear, transform 300ms linear;
+  &:hover,
+  &:focus {
+    background-color: rgb(251, 162, 177);
+    transform: scale(1.25);
+  }
 }
 .modal-buy-now-close__btn {
   display: flex;

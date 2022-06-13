@@ -31,7 +31,7 @@
   font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 26px;
-  line-height: 1, 15;
+  line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
@@ -45,12 +45,24 @@
   border: none;
   outline: none;
   padding: 0;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transition: background-color 300ms linear;
+  cursor: pointer;
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
+.button__open-mob-menu:hover,
+.button__open-mob-menu:focus {
+  background-color: #fff;
+}
+
 .header-btn {
   border: none;
   border-radius: 22px;
@@ -69,7 +81,7 @@
   padding-bottom: 15px;
   margin-left: 32px;
   transition: background-color 300ms linear;
-
+  outline: none;
   cursor: pointer;
   &:hover,
   &:focus {
@@ -90,9 +102,9 @@
   }
 }
 .header-menu-list {
-  display: flex;
-  @media screen and (max-width: 1280px) {
-    display: none;
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
   }
 }
 .header-menu-list-item__link {
@@ -103,6 +115,11 @@
   line-height: calc(21px / 16px);
   color: #ffffff;
   text-decoration: none;
+  transition: color 300ms linear;
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
 }
 .header-menu-list-item {
   margin-right: 35px;

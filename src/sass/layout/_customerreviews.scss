@@ -164,7 +164,6 @@
   text-align: center;
   text-decoration: none;
   border: none;
-  
   &.show {
     @include mobile {
       visibility: hidden;
@@ -280,3 +279,22 @@
           0% {transform:rotate(0deg);}
         100% {transform:rotate(360deg);}
     }
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    &:hover,
+    &:focus {
+      background-color: #ffa5ba;
+      box-shadow: 0 0 10px 0 #ff003c inset, 0 0 20px 4px #ff003c;
+      transition: all 150ms ease-in-out;
+    }
+  }
+  &:after {
+    content: '\2B9D';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #d41443;
+  }
+}

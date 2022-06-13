@@ -188,6 +188,7 @@
 .infoinfo-open-btn {
   cursor: pointer;
 }
+
 .infoinfo-open-btn::after {
   content: '';
   display: block;
@@ -199,11 +200,15 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 10px;
-  transition: transform 700ms linear;
+  transition: transform 700ms linear, border 300ms linear;
   margin-top: 7px;
   @media screen and (min-width: 1280px) {
     margin-top: 20px;
   }
+}
+.infoinfo-open-btn:hover.infoinfo-open-btn::after,
+.infoinfo-open-btn:focus.infoinfo-open-btn::after {
+  border: 2px solid #d4144495;
 }
 .info-open-btn__check:checked + .infoinfo-open-btn::after {
   transform: rotate(-90deg);
