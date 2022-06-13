@@ -97,9 +97,12 @@
   }
 }
 .about__description-text {
+  padding-right: 60px;
+
   @include tablet {
     margin-left: 32px;
     width: 100%;
+    padding-right: 0;
   }
 
   @include desktop {
