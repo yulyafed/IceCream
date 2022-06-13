@@ -68,8 +68,7 @@
     [dir="rtl"] & {
         float: right;
     }
-    img {
-    }
+
     &.slick-loading img {
         display: none;
     }
@@ -80,8 +79,6 @@
         pointer-events: none;
     }
 
-    .slick-initialized & {
-    }
 
     .slick-loading & {
         visibility: hidden;
