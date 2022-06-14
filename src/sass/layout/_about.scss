@@ -3,14 +3,14 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  background-image: url(../image-about/milk-bg-mobile-1x.png);
+  background-image: url(../images/image-about/milk-bg-mobile-1x.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right 50% bottom 25%;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../image-about/milk-bg-mobile-2x.png);
+    background-image: url(../images/image-about/milk-bg-mobile-2x.png);
     background-size: contain;
 
     background-position: right 50% bottom 25%;
@@ -21,11 +21,11 @@
   }
 
   @include desktop {
-    background-image: url(../image-about/milk-bg-desctop-1x.png);
+    background-image: url(../images/image-about/milk-bg-desctop-1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../image-about/milk-bg-desctop-2x.png);
+      background-image: url(../images/image-about/milk-bg-desctop-2x.png);
     }
   }
 }
