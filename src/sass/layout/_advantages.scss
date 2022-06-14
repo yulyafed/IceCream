@@ -107,20 +107,6 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-@keyframes iconrotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  35%{
-    transform: rotate(90deg);
-  }
-  65%{
-    transform: rotate(-90deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 .third-item::before{
   content: '';
   width: 44px;
@@ -145,20 +131,6 @@
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-}
-@keyframes iconrotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  35%{
-    transform: rotate(90deg);
-  }
-  65%{
-    transform: rotate(-90deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 .advantages-top-text {
 font-family: 'Titan One';
