@@ -78,6 +78,9 @@
     transform: rotate(0deg);
   }
 }
+.advantages__box {
+  display: flex;
+}
 .second-item::before{
   content: '';
   width: 50px;

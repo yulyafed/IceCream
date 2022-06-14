@@ -12,7 +12,7 @@ $('.slider__wrapper').slick({
   arrows: false,
   dots: true,
   infinite: true,
-  speed: 1000,
+  speed: 700,
   swipe: true,
   cssEase: 'linear',
   centerMode: false,
