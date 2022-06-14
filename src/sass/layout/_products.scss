@@ -114,8 +114,8 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--first-text-color);
+    margin-bottom: 32px;
     @media screen and (min-width: 1280px) {
-      font-size: 30px;
       line-height: calc(23 / 30);
     }
 
