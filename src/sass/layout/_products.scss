@@ -92,6 +92,9 @@
       font-size: 16px;
       line-height: calc(24 / 16);
     }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 60px;
+    }
   }
 
   &__row {
@@ -209,7 +212,6 @@
 .additinfo-open-btn__check:checked + .additinfo-open-btn .additinfo-text {
   transform: translateY(0);
   opacity: 1;
-  // background-color: var(--first-bg-color);
 }
 .additinfo-text {
   font-family: 'DM Sans';
